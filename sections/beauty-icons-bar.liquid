@@ -1,6 +1,6 @@
 {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {%- when 'beauty-icons-bar' -%}
+      {%- when 'icon_text_button' -%}
         <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
           {%- if block.settings.text != blank -%}
             {%- if block.settings.link != blank -%}
@@ -26,7 +26,7 @@
   "max_blocks": 12,
   "blocks": [
     {
-      "type": "announcement",
+      "type": "icon_text_button",
       "name": "Icon Text Button",
       "settings": [
         {
