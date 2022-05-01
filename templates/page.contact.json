@@ -16,10 +16,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16514114936111efe4": {
+      "type": "beauty-icons-bar",
+      "blocks": {
+        "c3475808-0b05-42ce-abfd-867b39c9928b": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "Click Me!",
+            "color_scheme": "background-1",
+            "button_link": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "c3475808-0b05-42ce-abfd-867b39c9928b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "16514114936111efe4"
   ]
 }

@@ -1,3 +1,9 @@
+{% comment %} <link rel="stylesheet" href="{{ 'section-beauty-icons-bar.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-beauty-icons-bar.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
+{% comment %} <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript> {% endcomment %}
+
 {% comment %} {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'icon_text_button' -%}
@@ -42,12 +48,43 @@
       </li>
     {%- endfor -%}
 </ul> {% endcomment %}
-<ul class="beauty-icons-bar__ul page-width" role="list">
+{{ 'section-beauty-icons-bar.css' | asset_url | stylesheet_tag }}
+{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+    </symbol>
+  
+    <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+      <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+    </symbol>
+
+    <symbol id="woman" viewbox="0 0 18 19" fill="none">
+        <path id="path3685" d="m-3.9831 138.41c17.42-14.784 43.025-15.059 63.467-6.9197 18.281 6.3102 34.087 19.855 41.828 37.73 8.7072 18.171 12.927 38.085 16.526 57.778 1.5661 24.039-11.599 45.306-21.331 66.288-6.3903 9.6754-19.688 10.155-30.107 8.6588-19.187-2.7669-37.92-12.268-57.666-8.3127-10.983 1.1981-22.556-5.8172-25.167-16.853-5.5584-17.059-3.4772-35.294-5.972-52.841-1.2622-29.558 8.1528-58.23 18.422-85.529z"/>
+    </symbol>
+  </svg>
+
+<div class="beauty-icons-bar__ul">
     {%- for block in section.blocks -%}
-      <li>
-        <a href="{{ block.button_link }}" class="mega-menu__link mega-menu__link--level-2 link{% if block.button_link.current %} mega-menu__link--active{% endif %}"{% if block.button_link.current %} aria-current="page"{% endif %}>
-          {{ block.button_text | escape }}
-        </a>
+      {% comment %} <li class="beauty-icons-bar__li"> {% endcomment %}
+        <div class="beauty-icons-bar__div beauty-icons-bar__li">
+            <a href="{{ block.settings.button_link }}" class="mega-menu__link mega-menu__link--level-2 link{% if block.settings.button_link == page.url %} beauty-icons-bar__a_disabled{% endif %}"{% if block.settings.button_link.current %} aria-current="page"{% endif %}>
+                <span>
+                    <svg class="beauty-icons-bar__icon" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#woman">
+                    </svg>
+                    {% comment %} <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+                      <use href="#icon-close">
+                    </svg> {% endcomment %}
+                </span>
+                <p>{{ block.settings.button_text | escape }}</p>
+            </a>
+        </div>
+        {% comment %} <a href="{{ block.settings.button_link }}" class="mega-menu__link mega-menu__link--level-2 link{% if block.settings.button_link == page.url %} mega-menu__link--active{% endif %}"{% if block.settings.button_link.current %} aria-current="page"{% endif %}>
+          {{ block.settings.button_text | escape }}
+        </a> {% endcomment %}
+        {% comment %} <p class="beauty-icons-bar__p">{{ block.settings.button_text }}</p> {% endcomment %}
         {% comment %} {%- if childlink.links != blank -%}
           <ul class="list-unstyled" role="list">
             {%- for grandchildlink in childlink.links -%}
@@ -59,16 +96,16 @@
             {%- endfor -%}
           </ul>
         {%- endif -%} {% endcomment %}
-      </li>
+      {% comment %} </li> {% endcomment %}
     {%- endfor -%}
-</ul>
+</div>
   
 {% schema %}
 {
   "name": "Beauty Icons Bar",
   "tag": "section",
   "class": "section",
-  "max_blocks": 12,
+  "max_blocks": 24,
   "blocks": [
     {
       "type": "icon_text_button",

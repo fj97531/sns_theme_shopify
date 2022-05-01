@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "16514196945a67d6db": {
+      "type": "beauty-icons-bar",
+      "blocks": {
+        "961cd29e-04c3-4abb-9205-b21a3f4df55c": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test1",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a478": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test2",
+            "color_scheme": "accent-1",
+            "button_link": "\/test-2"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a479": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test3",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a480": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test4",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a481": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test5",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a482": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test6",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a483": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test7",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a484": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test8",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a485": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test9",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a486": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test10",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a487": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test11",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a488": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test12",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a489": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test13",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a490": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test14",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a491": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test15",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        },
+        "21a54769-3a7c-450b-a859-35efc398a492": {
+          "type": "icon_text_button",
+          "settings": {
+            "button_text": "test16",
+            "color_scheme": "accent-1",
+            "button_link": "\/pages/test-page-u"
+          }
+        }
+
+      },
+      "block_order": [
+        "961cd29e-04c3-4abb-9205-b21a3f4df55c",
+        "21a54769-3a7c-450b-a859-35efc398a478",
+        "21a54769-3a7c-450b-a859-35efc398a479",
+        "21a54769-3a7c-450b-a859-35efc398a480",
+        "21a54769-3a7c-450b-a859-35efc398a481",
+        "21a54769-3a7c-450b-a859-35efc398a482",
+        "21a54769-3a7c-450b-a859-35efc398a483",
+        "21a54769-3a7c-450b-a859-35efc398a484",
+        "21a54769-3a7c-450b-a859-35efc398a485",
+        "21a54769-3a7c-450b-a859-35efc398a486",
+        "21a54769-3a7c-450b-a859-35efc398a487",
+        "21a54769-3a7c-450b-a859-35efc398a488",
+        "21a54769-3a7c-450b-a859-35efc398a489",
+        "21a54769-3a7c-450b-a859-35efc398a490",
+        "21a54769-3a7c-450b-a859-35efc398a491",
+        "21a54769-3a7c-450b-a859-35efc398a492"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16514196945a67d6db"
+  ]
+}
