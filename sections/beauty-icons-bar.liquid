@@ -42,7 +42,7 @@
       </li>
     {%- endfor -%}
 </ul> {% endcomment %}
-<ul class="mega-menu__list page-width" role="list">
+<ul class="beauty-icons-bar__ul page-width" role="list">
     {%- for block in section.blocks -%}
       <li>
         <a href="{{ block.button_link }}" class="mega-menu__link mega-menu__link--level-2 link{% if block.button_link.current %} mega-menu__link--active{% endif %}"{% if block.button_link.current %} aria-current="page"{% endif %}>
@@ -61,11 +61,13 @@
         {%- endif -%} {% endcomment %}
       </li>
     {%- endfor -%}
-  </ul>
+</ul>
   
 {% schema %}
 {
   "name": "Beauty Icons Bar",
+  "tag": "section",
+  "class": "section",
   "max_blocks": 12,
   "blocks": [
     {
