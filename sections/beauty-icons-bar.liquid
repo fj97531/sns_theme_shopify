@@ -46,7 +46,7 @@
     {%- for block in section.blocks -%}
       <li>
         <a href="{{ block.button_link }}" class="mega-menu__link mega-menu__link--level-2 link{% if block.button_link.current %} mega-menu__link--active{% endif %}"{% if block.button_link.current %} aria-current="page"{% endif %}>
-          {{ button_text | escape }}
+          {{ block.button_text | escape }}
         </a>
         {% comment %} {%- if childlink.links != blank -%}
           <ul class="list-unstyled" role="list">
